@@ -1,0 +1,44 @@
+body {
+  margin: 0;
+  width: 100vw;
+  height: 100vh;
+  overflow: hidden;
+  background-size: cover;
+}
+
+#adFull {
+  width: 100vw;
+  height: 100vh;
+  background-color: rgba(149, 191, 230, 0.5);
+  position: fixed;
+  text-align: center;
+  z-index: 9999;
+}
+
+#adImage {
+  margin: 33vh auto 0 auto;
+  cursor: pointer;
+  height: 33vh;
+}
+
+video {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  min-width: 100%;
+  min-height: 100%;
+  width: auto;
+  height: auto;
+  z-index: -100;
+  transform: translateX(-50%) translateY(-50%);
+  background: no-repeat;
+  background-size: cover;
+}
+
+@media screen and (max-width: 800px) {
+  #adFull{
+    display: none;
+  }
+  
+
+}
